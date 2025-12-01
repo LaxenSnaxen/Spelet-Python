@@ -178,6 +178,25 @@ void AudioManager::stopSound(ALuint sourceId) {
     }
 }
 
+void AudioManager::cleanupFinishedSources() {
+    if (!initialized_) {
+        return;
+    }
+
+    // Remove finished (stopped) sources to prevent unbounded memory growth
+    auto it = sources_.begin();
+    while (it != sources_.end()) {
+        ALint state;
+        alGetSourcei(*it, AL_SOURCE_STATE, &state);
+        if (state == AL_STOPPED) {
+            alDeleteSources(1, &(*it));
+            it = sources_.erase(it);
+        } else {
+            ++it;
+        }
+    }
+}
+
 void AudioManager::setMasterVolume(float volume) {
     masterVolume_ = std::max(0.0f, std::min(1.0f, volume));
     
@@ -189,27 +208,42 @@ void AudioManager::setMasterVolume(float volume) {
 
 bool AudioManager::loadWAV(const std::string& filepath, int& channels, int& sampleRate,
                            int& bitsPerSample, std::vector<char>& data) {
-    std::ifstream file(filepath, std::ios::binary);
+    std::ifstream file(filepath, std::ios::binary | std::ios::ate);
     if (!file.is_open()) {
         std::cerr << "Failed to open WAV file: " << filepath << std::endl;
+        return false;
+    }
+
+    // Get file size for bounds checking
+    std::streamsize fileSize = file.tellg();
+    file.seekg(0, std::ios::beg);
+    
+    // Minimum WAV header size (44 bytes for standard PCM)
+    if (fileSize < 44) {
+        std::cerr << "Invalid WAV file: file too small" << std::endl;
         return false;
     }
 
     // Read RIFF header
     char riff[4];
     file.read(riff, 4);
-    if (strncmp(riff, "RIFF", 4) != 0) {
+    if (!file || strncmp(riff, "RIFF", 4) != 0) {
         std::cerr << "Invalid WAV file: missing RIFF header" << std::endl;
         return false;
     }
 
-    // Skip file size
-    file.seekg(4, std::ios::cur);
+    // Read and validate file size from header
+    int32_t headerFileSize;
+    file.read(reinterpret_cast<char*>(&headerFileSize), sizeof(headerFileSize));
+    if (!file) {
+        std::cerr << "Invalid WAV file: truncated header" << std::endl;
+        return false;
+    }
 
     // Read WAVE format
     char wave[4];
     file.read(wave, 4);
-    if (strncmp(wave, "WAVE", 4) != 0) {
+    if (!file || strncmp(wave, "WAVE", 4) != 0) {
         std::cerr << "Invalid WAV file: missing WAVE format" << std::endl;
         return false;
     }
@@ -217,7 +251,7 @@ bool AudioManager::loadWAV(const std::string& filepath, int& channels, int& samp
     // Read fmt chunk
     char fmt[4];
     file.read(fmt, 4);
-    if (strncmp(fmt, "fmt ", 4) != 0) {
+    if (!file || strncmp(fmt, "fmt ", 4) != 0) {
         std::cerr << "Invalid WAV file: missing fmt chunk" << std::endl;
         return false;
     }
@@ -225,11 +259,15 @@ bool AudioManager::loadWAV(const std::string& filepath, int& channels, int& samp
     // Read fmt chunk size
     int32_t fmtSize;
     file.read(reinterpret_cast<char*>(&fmtSize), sizeof(fmtSize));
+    if (!file || fmtSize < 16 || fmtSize > 1024) {
+        std::cerr << "Invalid WAV file: invalid fmt chunk size" << std::endl;
+        return false;
+    }
 
     // Read audio format (1 = PCM)
     int16_t audioFormat;
     file.read(reinterpret_cast<char*>(&audioFormat), sizeof(audioFormat));
-    if (audioFormat != 1) {
+    if (!file || audioFormat != 1) {
         std::cerr << "Unsupported WAV format: only PCM is supported" << std::endl;
         return false;
     }
@@ -237,45 +275,89 @@ bool AudioManager::loadWAV(const std::string& filepath, int& channels, int& samp
     // Read number of channels
     int16_t numChannels;
     file.read(reinterpret_cast<char*>(&numChannels), sizeof(numChannels));
+    if (!file || numChannels < 1 || numChannels > 2) {
+        std::cerr << "Invalid WAV file: unsupported number of channels" << std::endl;
+        return false;
+    }
     channels = numChannels;
 
     // Read sample rate
     int32_t sr;
     file.read(reinterpret_cast<char*>(&sr), sizeof(sr));
+    if (!file || sr <= 0) {
+        std::cerr << "Invalid WAV file: invalid sample rate" << std::endl;
+        return false;
+    }
     sampleRate = sr;
 
     // Skip byte rate and block align
     file.seekg(6, std::ios::cur);
+    if (!file) {
+        std::cerr << "Invalid WAV file: truncated header" << std::endl;
+        return false;
+    }
 
     // Read bits per sample
     int16_t bps;
     file.read(reinterpret_cast<char*>(&bps), sizeof(bps));
+    if (!file || (bps != 8 && bps != 16)) {
+        std::cerr << "Invalid WAV file: unsupported bits per sample" << std::endl;
+        return false;
+    }
     bitsPerSample = bps;
 
     // Skip any extra format bytes
     if (fmtSize > 16) {
         file.seekg(fmtSize - 16, std::ios::cur);
+        if (!file) {
+            std::cerr << "Invalid WAV file: truncated format chunk" << std::endl;
+            return false;
+        }
     }
 
-    // Find data chunk
+    // Find data chunk with bounds checking
     char chunkId[4];
-    int32_t chunkSize;
+    int32_t chunkSize = 0;
+    bool foundData = false;
+    
     while (file.read(chunkId, 4)) {
-        file.read(reinterpret_cast<char*>(&chunkSize), sizeof(chunkSize));
-        if (strncmp(chunkId, "data", 4) == 0) {
+        if (!file.read(reinterpret_cast<char*>(&chunkSize), sizeof(chunkSize))) {
             break;
         }
+        
+        if (strncmp(chunkId, "data", 4) == 0) {
+            foundData = true;
+            break;
+        }
+        
+        // Validate chunk size before seeking
+        if (chunkSize < 0 || static_cast<std::streamoff>(file.tellg()) + chunkSize > fileSize) {
+            std::cerr << "Invalid WAV file: chunk size exceeds file bounds" << std::endl;
+            return false;
+        }
+        
         file.seekg(chunkSize, std::ios::cur);
     }
 
-    if (strncmp(chunkId, "data", 4) != 0) {
+    if (!foundData) {
         std::cerr << "Invalid WAV file: missing data chunk" << std::endl;
         return false;
     }
 
+    // Validate data chunk size
+    if (chunkSize <= 0 || static_cast<std::streamoff>(file.tellg()) + chunkSize > fileSize) {
+        std::cerr << "Invalid WAV file: data chunk size exceeds file bounds" << std::endl;
+        return false;
+    }
+
     // Read audio data
-    data.resize(chunkSize);
+    data.resize(static_cast<size_t>(chunkSize));
     file.read(data.data(), chunkSize);
+    
+    if (!file) {
+        std::cerr << "Failed to read WAV audio data" << std::endl;
+        return false;
+    }
 
     return true;
 }

@@ -58,6 +58,12 @@ public:
     void stopSound(ALuint sourceId);
 
     /**
+     * @brief Clean up finished (non-looping) sound sources
+     * Call this periodically to prevent unbounded memory growth
+     */
+    void cleanupFinishedSources();
+
+    /**
      * @brief Set the master volume
      * @param volume Volume level (0.0 to 1.0)
      */

@@ -21,6 +21,7 @@ struct Player {
 // Game state
 struct GameState {
     bool running;
+    bool audioAvailable;
     Player player;
     audio::AudioManager audioManager;
 };
@@ -102,8 +103,12 @@ void handleInput(GameState& state) {
 void update(GameState& state, float deltaTime) {
     // Add game logic here
     // For now, this is a simple starter with no complex updates
-    (void)state;
     (void)deltaTime;
+    
+    // Periodically clean up finished audio sources
+    if (state.audioAvailable) {
+        state.audioManager.cleanupFinishedSources();
+    }
 }
 
 /**
@@ -132,6 +137,12 @@ void render(const GameState& state) {
     terminal_color(state.player.color);
     terminal_put(state.player.x, state.player.y, state.player.symbol);
     
+    // Draw status messages
+    if (!state.audioAvailable) {
+        terminal_color(color_from_name("red"));
+        terminal_print(WINDOW_WIDTH - 20, 0, " No Audio ");
+    }
+    
     // Draw instructions
     terminal_color(color_from_name("white"));
     terminal_print(2, WINDOW_HEIGHT - 1, " WASD/Arrows: Move | Space: Action | ESC: Quit ");
@@ -154,16 +165,14 @@ int main() {
     // Initialize game state
     GameState state;
     state.running = true;
+    state.audioAvailable = false;
     state.player.x = PLAYER_START_X;
     state.player.y = PLAYER_START_Y;
     state.player.symbol = '@';
     state.player.color = color_from_name("yellow");
     
     // Initialize audio system
-    if (!state.audioManager.init()) {
-        // Audio is optional, continue without it
-        terminal_print(2, 1, "Audio not available");
-    }
+    state.audioAvailable = state.audioManager.init();
     
     // Game timing
     auto lastTime = std::chrono::high_resolution_clock::now();
