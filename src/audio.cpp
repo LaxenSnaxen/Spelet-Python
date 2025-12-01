@@ -208,6 +208,10 @@ void AudioManager::setMasterVolume(float volume) {
 
 bool AudioManager::loadWAV(const std::string& filepath, int& channels, int& sampleRate,
                            int& bitsPerSample, std::vector<char>& data) {
+    // Note: WAV files use little-endian byte order. This code assumes a little-endian
+    // system (x86, x64, ARM in little-endian mode). For big-endian systems, byte
+    // swapping would be required for multi-byte values.
+    
     std::ifstream file(filepath, std::ios::binary | std::ios::ate);
     if (!file.is_open()) {
         std::cerr << "Failed to open WAV file: " << filepath << std::endl;
@@ -331,7 +335,9 @@ bool AudioManager::loadWAV(const std::string& filepath, int& channels, int& samp
         }
         
         // Validate chunk size before seeking
-        if (chunkSize < 0 || static_cast<std::streamoff>(file.tellg()) + chunkSize > fileSize) {
+        std::streamoff currentPos = file.tellg();
+        if (chunkSize < 0 || currentPos < 0 || 
+            chunkSize > fileSize - currentPos) {
             std::cerr << "Invalid WAV file: chunk size exceeds file bounds" << std::endl;
             return false;
         }
@@ -344,8 +350,9 @@ bool AudioManager::loadWAV(const std::string& filepath, int& channels, int& samp
         return false;
     }
 
-    // Validate data chunk size
-    if (chunkSize <= 0 || static_cast<std::streamoff>(file.tellg()) + chunkSize > fileSize) {
+    // Validate data chunk size (avoid overflow by subtracting instead of adding)
+    std::streamoff dataPos = file.tellg();
+    if (chunkSize <= 0 || dataPos < 0 || chunkSize > fileSize - dataPos) {
         std::cerr << "Invalid WAV file: data chunk size exceeds file bounds" << std::endl;
         return false;
     }
