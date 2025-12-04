@@ -1,0 +1,464 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{57D9C279-91A4-3FA3-94BC-DF067D389679}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.26100.0</WindowsTargetPlatformVersion>
+    <Platform>x64</Platform>
+    <ProjectName>BearLibTerminal</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\maxim\OneDrive\Skrivbord\GITHUB\Spelet-Python\Output\Windows64\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">BearLibTerminal.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">BearLibTerminal</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\maxim\OneDrive\Skrivbord\GITHUB\Spelet-Python\Output\Windows64\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">BearLibTerminal.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">BearLibTerminal</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\maxim\OneDrive\Skrivbord\GITHUB\Spelet-Python\Output\Windows64\MinSizeRel\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">BearLibTerminal.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">BearLibTerminal</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\maxim\OneDrive\Skrivbord\GITHUB\Spelet-Python\Output\Windows64\RelWithDebInfo\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">BearLibTerminal.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">BearLibTerminal</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</GenerateManifest>
+  </PropertyGroup>
+  <PropertyGroup />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\maxim\OneDrive\Skrivbord\GITHUB\Spelet-Python\build\bearlibterminal\Terminal\.\Include\C;C:\Users\maxim\OneDrive\Skrivbord\GITHUB\Spelet-Python\build\bearlibterminal\Terminal\.\Dependencies\FreeType\Include;C:\Users\maxim\OneDrive\Skrivbord\GITHUB\Spelet-Python\build\bearlibterminal\Terminal\.\Dependencies\PicoPNG\Include;C:\Users\maxim\OneDrive\Skrivbord\GITHUB\Spelet-Python\build\bearlibterminal\Terminal\.\Dependencies\NanoJPEG\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <BufferSecurityCheck></BufferSecurityCheck>
+      <CallingConvention></CallingConvention>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <FloatingPointModel></FloatingPointModel>
+      <ForceConformanceInForLoopScope></ForceConformanceInForLoopScope>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp14</LanguageStandard>
+      <MinimalRebuild></MinimalRebuild>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RemoveUnreferencedCodeData></RemoveUnreferencedCodeData>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <SupportJustMyCode></SupportJustMyCode>
+      <TreatWChar_tAsBuiltInType></TreatWChar_tAsBuiltInType>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;TERMINAL_VERSION="Unknown";UNICODE;CMAKE_INTDIR="Debug";BearLibTerminal_EXPORTS</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_DEBUG;_WINDOWS;TERMINAL_VERSION=\"Unknown\";UNICODE;CMAKE_INTDIR=\"Debug\";BearLibTerminal_EXPORTS</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\maxim\OneDrive\Skrivbord\GITHUB\Spelet-Python\build\bearlibterminal\Terminal\.\Include\C;C:\Users\maxim\OneDrive\Skrivbord\GITHUB\Spelet-Python\build\bearlibterminal\Terminal\.\Dependencies\FreeType\Include;C:\Users\maxim\OneDrive\Skrivbord\GITHUB\Spelet-Python\build\bearlibterminal\Terminal\.\Dependencies\PicoPNG\Include;C:\Users\maxim\OneDrive\Skrivbord\GITHUB\Spelet-Python\build\bearlibterminal\Terminal\.\Dependencies\NanoJPEG\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\maxim\OneDrive\Skrivbord\GITHUB\Spelet-Python\build\bearlibterminal\Terminal\.\Include\C;C:\Users\maxim\OneDrive\Skrivbord\GITHUB\Spelet-Python\build\bearlibterminal\Terminal\.\Dependencies\FreeType\Include;C:\Users\maxim\OneDrive\Skrivbord\GITHUB\Spelet-Python\build\bearlibterminal\Terminal\.\Dependencies\PicoPNG\Include;C:\Users\maxim\OneDrive\Skrivbord\GITHUB\Spelet-Python\build\bearlibterminal\Terminal\.\Dependencies\NanoJPEG\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>..\lib\Debug\freetype2.lib;..\lib\Debug\picopng.lib;opengl32.lib;..\lib\Debug\picopng.lib;opengl32.lib;winmm.lib;C:\Users\maxim\OneDrive\Skrivbord\GITHUB\Spelet-Python\build\bearlibterminal\Terminal\Resource\Terminal-64bit.res;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <DataExecutionPrevention></DataExecutionPrevention>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImageHasSafeExceptionHandlers></ImageHasSafeExceptionHandlers>
+      <ImportLibrary>C:/Users/maxim/OneDrive/Skrivbord/GITHUB/Spelet-Python/Output/Windows64/Debug/BearLibTerminal.lib</ImportLibrary>
+      <LinkErrorReporting></LinkErrorReporting>
+      <ProgramDataBaseFile>C:/Users/maxim/OneDrive/Skrivbord/GITHUB/Spelet-Python/Output/Windows64/Debug/BearLibTerminal.pdb</ProgramDataBaseFile>
+      <RandomizedBaseAddress></RandomizedBaseAddress>
+      <SubSystem></SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\maxim\OneDrive\Skrivbord\GITHUB\Spelet-Python\build\bearlibterminal\Terminal\.\Include\C;C:\Users\maxim\OneDrive\Skrivbord\GITHUB\Spelet-Python\build\bearlibterminal\Terminal\.\Dependencies\FreeType\Include;C:\Users\maxim\OneDrive\Skrivbord\GITHUB\Spelet-Python\build\bearlibterminal\Terminal\.\Dependencies\PicoPNG\Include;C:\Users\maxim\OneDrive\Skrivbord\GITHUB\Spelet-Python\build\bearlibterminal\Terminal\.\Dependencies\NanoJPEG\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <BufferSecurityCheck></BufferSecurityCheck>
+      <CallingConvention></CallingConvention>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <FloatingPointModel></FloatingPointModel>
+      <ForceConformanceInForLoopScope></ForceConformanceInForLoopScope>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp14</LanguageStandard>
+      <MinimalRebuild></MinimalRebuild>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RemoveUnreferencedCodeData></RemoveUnreferencedCodeData>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <SupportJustMyCode></SupportJustMyCode>
+      <TreatWChar_tAsBuiltInType></TreatWChar_tAsBuiltInType>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;TERMINAL_VERSION="Unknown";UNICODE;CMAKE_INTDIR="Release";BearLibTerminal_EXPORTS</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;TERMINAL_VERSION=\"Unknown\";UNICODE;CMAKE_INTDIR=\"Release\";BearLibTerminal_EXPORTS</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\maxim\OneDrive\Skrivbord\GITHUB\Spelet-Python\build\bearlibterminal\Terminal\.\Include\C;C:\Users\maxim\OneDrive\Skrivbord\GITHUB\Spelet-Python\build\bearlibterminal\Terminal\.\Dependencies\FreeType\Include;C:\Users\maxim\OneDrive\Skrivbord\GITHUB\Spelet-Python\build\bearlibterminal\Terminal\.\Dependencies\PicoPNG\Include;C:\Users\maxim\OneDrive\Skrivbord\GITHUB\Spelet-Python\build\bearlibterminal\Terminal\.\Dependencies\NanoJPEG\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\maxim\OneDrive\Skrivbord\GITHUB\Spelet-Python\build\bearlibterminal\Terminal\.\Include\C;C:\Users\maxim\OneDrive\Skrivbord\GITHUB\Spelet-Python\build\bearlibterminal\Terminal\.\Dependencies\FreeType\Include;C:\Users\maxim\OneDrive\Skrivbord\GITHUB\Spelet-Python\build\bearlibterminal\Terminal\.\Dependencies\PicoPNG\Include;C:\Users\maxim\OneDrive\Skrivbord\GITHUB\Spelet-Python\build\bearlibterminal\Terminal\.\Dependencies\NanoJPEG\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>..\lib\Release\freetype2.lib;..\lib\Release\picopng.lib;opengl32.lib;..\lib\Release\picopng.lib;opengl32.lib;winmm.lib;C:\Users\maxim\OneDrive\Skrivbord\GITHUB\Spelet-Python\build\bearlibterminal\Terminal\Resource\Terminal-64bit.res;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <DataExecutionPrevention></DataExecutionPrevention>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImageHasSafeExceptionHandlers></ImageHasSafeExceptionHandlers>
+      <ImportLibrary>C:/Users/maxim/OneDrive/Skrivbord/GITHUB/Spelet-Python/Output/Windows64/Release/BearLibTerminal.lib</ImportLibrary>
+      <LinkErrorReporting></LinkErrorReporting>
+      <ProgramDataBaseFile>C:/Users/maxim/OneDrive/Skrivbord/GITHUB/Spelet-Python/Output/Windows64/Release/BearLibTerminal.pdb</ProgramDataBaseFile>
+      <RandomizedBaseAddress></RandomizedBaseAddress>
+      <SubSystem></SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\maxim\OneDrive\Skrivbord\GITHUB\Spelet-Python\build\bearlibterminal\Terminal\.\Include\C;C:\Users\maxim\OneDrive\Skrivbord\GITHUB\Spelet-Python\build\bearlibterminal\Terminal\.\Dependencies\FreeType\Include;C:\Users\maxim\OneDrive\Skrivbord\GITHUB\Spelet-Python\build\bearlibterminal\Terminal\.\Dependencies\PicoPNG\Include;C:\Users\maxim\OneDrive\Skrivbord\GITHUB\Spelet-Python\build\bearlibterminal\Terminal\.\Dependencies\NanoJPEG\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <BufferSecurityCheck></BufferSecurityCheck>
+      <CallingConvention></CallingConvention>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <FloatingPointModel></FloatingPointModel>
+      <ForceConformanceInForLoopScope></ForceConformanceInForLoopScope>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp14</LanguageStandard>
+      <MinimalRebuild></MinimalRebuild>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RemoveUnreferencedCodeData></RemoveUnreferencedCodeData>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <SupportJustMyCode></SupportJustMyCode>
+      <TreatWChar_tAsBuiltInType></TreatWChar_tAsBuiltInType>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;TERMINAL_VERSION="Unknown";UNICODE;CMAKE_INTDIR="MinSizeRel";BearLibTerminal_EXPORTS</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;TERMINAL_VERSION=\"Unknown\";UNICODE;CMAKE_INTDIR=\"MinSizeRel\";BearLibTerminal_EXPORTS</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\maxim\OneDrive\Skrivbord\GITHUB\Spelet-Python\build\bearlibterminal\Terminal\.\Include\C;C:\Users\maxim\OneDrive\Skrivbord\GITHUB\Spelet-Python\build\bearlibterminal\Terminal\.\Dependencies\FreeType\Include;C:\Users\maxim\OneDrive\Skrivbord\GITHUB\Spelet-Python\build\bearlibterminal\Terminal\.\Dependencies\PicoPNG\Include;C:\Users\maxim\OneDrive\Skrivbord\GITHUB\Spelet-Python\build\bearlibterminal\Terminal\.\Dependencies\NanoJPEG\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\maxim\OneDrive\Skrivbord\GITHUB\Spelet-Python\build\bearlibterminal\Terminal\.\Include\C;C:\Users\maxim\OneDrive\Skrivbord\GITHUB\Spelet-Python\build\bearlibterminal\Terminal\.\Dependencies\FreeType\Include;C:\Users\maxim\OneDrive\Skrivbord\GITHUB\Spelet-Python\build\bearlibterminal\Terminal\.\Dependencies\PicoPNG\Include;C:\Users\maxim\OneDrive\Skrivbord\GITHUB\Spelet-Python\build\bearlibterminal\Terminal\.\Dependencies\NanoJPEG\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>..\lib\MinSizeRel\freetype2.lib;..\lib\MinSizeRel\picopng.lib;opengl32.lib;..\lib\MinSizeRel\picopng.lib;opengl32.lib;winmm.lib;C:\Users\maxim\OneDrive\Skrivbord\GITHUB\Spelet-Python\build\bearlibterminal\Terminal\Resource\Terminal-64bit.res;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <DataExecutionPrevention></DataExecutionPrevention>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImageHasSafeExceptionHandlers></ImageHasSafeExceptionHandlers>
+      <ImportLibrary>C:/Users/maxim/OneDrive/Skrivbord/GITHUB/Spelet-Python/Output/Windows64/MinSizeRel/BearLibTerminal.lib</ImportLibrary>
+      <LinkErrorReporting></LinkErrorReporting>
+      <ProgramDataBaseFile>C:/Users/maxim/OneDrive/Skrivbord/GITHUB/Spelet-Python/Output/Windows64/MinSizeRel/BearLibTerminal.pdb</ProgramDataBaseFile>
+      <RandomizedBaseAddress></RandomizedBaseAddress>
+      <SubSystem></SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\maxim\OneDrive\Skrivbord\GITHUB\Spelet-Python\build\bearlibterminal\Terminal\.\Include\C;C:\Users\maxim\OneDrive\Skrivbord\GITHUB\Spelet-Python\build\bearlibterminal\Terminal\.\Dependencies\FreeType\Include;C:\Users\maxim\OneDrive\Skrivbord\GITHUB\Spelet-Python\build\bearlibterminal\Terminal\.\Dependencies\PicoPNG\Include;C:\Users\maxim\OneDrive\Skrivbord\GITHUB\Spelet-Python\build\bearlibterminal\Terminal\.\Dependencies\NanoJPEG\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <BufferSecurityCheck></BufferSecurityCheck>
+      <CallingConvention></CallingConvention>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <FloatingPointModel></FloatingPointModel>
+      <ForceConformanceInForLoopScope></ForceConformanceInForLoopScope>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp14</LanguageStandard>
+      <MinimalRebuild></MinimalRebuild>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RemoveUnreferencedCodeData></RemoveUnreferencedCodeData>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <SupportJustMyCode></SupportJustMyCode>
+      <TreatWChar_tAsBuiltInType></TreatWChar_tAsBuiltInType>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;TERMINAL_VERSION="Unknown";UNICODE;CMAKE_INTDIR="RelWithDebInfo";BearLibTerminal_EXPORTS</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;TERMINAL_VERSION=\"Unknown\";UNICODE;CMAKE_INTDIR=\"RelWithDebInfo\";BearLibTerminal_EXPORTS</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\maxim\OneDrive\Skrivbord\GITHUB\Spelet-Python\build\bearlibterminal\Terminal\.\Include\C;C:\Users\maxim\OneDrive\Skrivbord\GITHUB\Spelet-Python\build\bearlibterminal\Terminal\.\Dependencies\FreeType\Include;C:\Users\maxim\OneDrive\Skrivbord\GITHUB\Spelet-Python\build\bearlibterminal\Terminal\.\Dependencies\PicoPNG\Include;C:\Users\maxim\OneDrive\Skrivbord\GITHUB\Spelet-Python\build\bearlibterminal\Terminal\.\Dependencies\NanoJPEG\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\maxim\OneDrive\Skrivbord\GITHUB\Spelet-Python\build\bearlibterminal\Terminal\.\Include\C;C:\Users\maxim\OneDrive\Skrivbord\GITHUB\Spelet-Python\build\bearlibterminal\Terminal\.\Dependencies\FreeType\Include;C:\Users\maxim\OneDrive\Skrivbord\GITHUB\Spelet-Python\build\bearlibterminal\Terminal\.\Dependencies\PicoPNG\Include;C:\Users\maxim\OneDrive\Skrivbord\GITHUB\Spelet-Python\build\bearlibterminal\Terminal\.\Dependencies\NanoJPEG\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>..\lib\RelWithDebInfo\freetype2.lib;..\lib\RelWithDebInfo\picopng.lib;opengl32.lib;..\lib\RelWithDebInfo\picopng.lib;opengl32.lib;winmm.lib;C:\Users\maxim\OneDrive\Skrivbord\GITHUB\Spelet-Python\build\bearlibterminal\Terminal\Resource\Terminal-64bit.res;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <DataExecutionPrevention></DataExecutionPrevention>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImageHasSafeExceptionHandlers></ImageHasSafeExceptionHandlers>
+      <ImportLibrary>C:/Users/maxim/OneDrive/Skrivbord/GITHUB/Spelet-Python/Output/Windows64/RelWithDebInfo/BearLibTerminal.lib</ImportLibrary>
+      <LinkErrorReporting></LinkErrorReporting>
+      <ProgramDataBaseFile>C:/Users/maxim/OneDrive/Skrivbord/GITHUB/Spelet-Python/Output/Windows64/RelWithDebInfo/BearLibTerminal.pdb</ProgramDataBaseFile>
+      <RandomizedBaseAddress></RandomizedBaseAddress>
+      <SubSystem></SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\maxim\OneDrive\Skrivbord\GITHUB\Spelet-Python\build\bearlibterminal\Terminal\CMakeLists.txt">
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule C:/Users/maxim/OneDrive/Skrivbord/GITHUB/Spelet-Python/build/bearlibterminal/Terminal/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/maxim/OneDrive/Skrivbord/GITHUB/Spelet-Python -BC:/Users/maxim/OneDrive/Skrivbord/GITHUB/Spelet-Python/build-msvc --check-stamp-file C:/Users/maxim/OneDrive/Skrivbord/GITHUB/Spelet-Python/build-msvc/bearlibterminal_build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Program Files\CMake\share\cmake-4.2\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\Compiler\MSVC.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\FindOpenGL.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\GNUInstallDirs.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\Internal\CMakeCLinkerInformation.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\Internal\CMakeCommonLinkerInformation.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\Linker\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\Linker\MSVC.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\Platform\Linker\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\Platform\Linker\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\Platform\Windows-MSVC.cmake;C:\Users\maxim\OneDrive\Skrivbord\GITHUB\Spelet-Python\build-msvc\CMakeFiles\4.2.0\CMakeCCompiler.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\maxim\OneDrive\Skrivbord\GITHUB\Spelet-Python\build-msvc\bearlibterminal_build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule C:/Users/maxim/OneDrive/Skrivbord/GITHUB/Spelet-Python/build/bearlibterminal/Terminal/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/maxim/OneDrive/Skrivbord/GITHUB/Spelet-Python -BC:/Users/maxim/OneDrive/Skrivbord/GITHUB/Spelet-Python/build-msvc --check-stamp-file C:/Users/maxim/OneDrive/Skrivbord/GITHUB/Spelet-Python/build-msvc/bearlibterminal_build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Program Files\CMake\share\cmake-4.2\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\Compiler\MSVC.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\FindOpenGL.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\GNUInstallDirs.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\Internal\CMakeCLinkerInformation.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\Internal\CMakeCommonLinkerInformation.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\Linker\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\Linker\MSVC.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\Platform\Linker\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\Platform\Linker\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\Platform\Windows-MSVC.cmake;C:\Users\maxim\OneDrive\Skrivbord\GITHUB\Spelet-Python\build-msvc\CMakeFiles\4.2.0\CMakeCCompiler.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\maxim\OneDrive\Skrivbord\GITHUB\Spelet-Python\build-msvc\bearlibterminal_build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule C:/Users/maxim/OneDrive/Skrivbord/GITHUB/Spelet-Python/build/bearlibterminal/Terminal/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/maxim/OneDrive/Skrivbord/GITHUB/Spelet-Python -BC:/Users/maxim/OneDrive/Skrivbord/GITHUB/Spelet-Python/build-msvc --check-stamp-file C:/Users/maxim/OneDrive/Skrivbord/GITHUB/Spelet-Python/build-msvc/bearlibterminal_build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Program Files\CMake\share\cmake-4.2\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\Compiler\MSVC.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\FindOpenGL.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\GNUInstallDirs.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\Internal\CMakeCLinkerInformation.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\Internal\CMakeCommonLinkerInformation.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\Linker\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\Linker\MSVC.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\Platform\Linker\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\Platform\Linker\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\Platform\Windows-MSVC.cmake;C:\Users\maxim\OneDrive\Skrivbord\GITHUB\Spelet-Python\build-msvc\CMakeFiles\4.2.0\CMakeCCompiler.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\maxim\OneDrive\Skrivbord\GITHUB\Spelet-Python\build-msvc\bearlibterminal_build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule C:/Users/maxim/OneDrive/Skrivbord/GITHUB/Spelet-Python/build/bearlibterminal/Terminal/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/maxim/OneDrive/Skrivbord/GITHUB/Spelet-Python -BC:/Users/maxim/OneDrive/Skrivbord/GITHUB/Spelet-Python/build-msvc --check-stamp-file C:/Users/maxim/OneDrive/Skrivbord/GITHUB/Spelet-Python/build-msvc/bearlibterminal_build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Program Files\CMake\share\cmake-4.2\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\Compiler\MSVC.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\FindOpenGL.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\GNUInstallDirs.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\Internal\CMakeCLinkerInformation.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\Internal\CMakeCommonLinkerInformation.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\Linker\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\Linker\MSVC.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\Platform\Linker\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\Platform\Linker\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\Platform\Windows-MSVC.cmake;C:\Users\maxim\OneDrive\Skrivbord\GITHUB\Spelet-Python\build-msvc\CMakeFiles\4.2.0\CMakeCCompiler.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\maxim\OneDrive\Skrivbord\GITHUB\Spelet-Python\build-msvc\bearlibterminal_build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="C:\Users\maxim\OneDrive\Skrivbord\GITHUB\Spelet-Python\build\bearlibterminal\Terminal\Source\Atlas.cpp" />
+    <ClCompile Include="C:\Users\maxim\OneDrive\Skrivbord\GITHUB\Spelet-Python\build\bearlibterminal\Terminal\Source\BOM.cpp" />
+    <ClCompile Include="C:\Users\maxim\OneDrive\Skrivbord\GITHUB\Spelet-Python\build\bearlibterminal\Terminal\Source\Base64.cpp" />
+    <ClCompile Include="C:\Users\maxim\OneDrive\Skrivbord\GITHUB\Spelet-Python\build\bearlibterminal\Terminal\Source\BearLibTerminal.cpp" />
+    <ClCompile Include="C:\Users\maxim\OneDrive\Skrivbord\GITHUB\Spelet-Python\build\bearlibterminal\Terminal\Source\Bitmap.cpp" />
+    <ClCompile Include="C:\Users\maxim\OneDrive\Skrivbord\GITHUB\Spelet-Python\build\bearlibterminal\Terminal\Source\BitmapTileset.cpp" />
+    <ClCompile Include="C:\Users\maxim\OneDrive\Skrivbord\GITHUB\Spelet-Python\build\bearlibterminal\Terminal\Source\Config.cpp" />
+    <ClCompile Include="C:\Users\maxim\OneDrive\Skrivbord\GITHUB\Spelet-Python\build\bearlibterminal\Terminal\Source\DynamicTileset.cpp" />
+    <ClCompile Include="C:\Users\maxim\OneDrive\Skrivbord\GITHUB\Spelet-Python\build\bearlibterminal\Terminal\Source\Encoding.cpp" />
+    <ClCompile Include="C:\Users\maxim\OneDrive\Skrivbord\GITHUB\Spelet-Python\build\bearlibterminal\Terminal\Source\Keystroke.cpp" />
+    <ClCompile Include="C:\Users\maxim\OneDrive\Skrivbord\GITHUB\Spelet-Python\build\bearlibterminal\Terminal\Source\LoadBMP.cpp" />
+    <ClCompile Include="C:\Users\maxim\OneDrive\Skrivbord\GITHUB\Spelet-Python\build\bearlibterminal\Terminal\Source\LoadBitmap.cpp" />
+    <ClCompile Include="C:\Users\maxim\OneDrive\Skrivbord\GITHUB\Spelet-Python\build\bearlibterminal\Terminal\Source\LoadJPEG.cpp" />
+    <ClCompile Include="C:\Users\maxim\OneDrive\Skrivbord\GITHUB\Spelet-Python\build\bearlibterminal\Terminal\Source\LoadPNG.cpp" />
+    <ClCompile Include="C:\Users\maxim\OneDrive\Skrivbord\GITHUB\Spelet-Python\build\bearlibterminal\Terminal\Source\Log.cpp" />
+    <ClCompile Include="C:\Users\maxim\OneDrive\Skrivbord\GITHUB\Spelet-Python\build\bearlibterminal\Terminal\Source\Luaopen.cpp" />
+    <ClCompile Include="C:\Users\maxim\OneDrive\Skrivbord\GITHUB\Spelet-Python\build\bearlibterminal\Terminal\Source\OpenGL.cpp" />
+    <ClCompile Include="C:\Users\maxim\OneDrive\Skrivbord\GITHUB\Spelet-Python\build\bearlibterminal\Terminal\Source\OptionGroup.cpp" />
+    <ClCompile Include="C:\Users\maxim\OneDrive\Skrivbord\GITHUB\Spelet-Python\build\bearlibterminal\Terminal\Source\Options.cpp" />
+    <ClCompile Include="C:\Users\maxim\OneDrive\Skrivbord\GITHUB\Spelet-Python\build\bearlibterminal\Terminal\Source\Palette.cpp" />
+    <ClCompile Include="C:\Users\maxim\OneDrive\Skrivbord\GITHUB\Spelet-Python\build\bearlibterminal\Terminal\Source\Platform.cpp" />
+    <ClCompile Include="C:\Users\maxim\OneDrive\Skrivbord\GITHUB\Spelet-Python\build\bearlibterminal\Terminal\Source\Resource.cpp" />
+    <ClCompile Include="C:\Users\maxim\OneDrive\Skrivbord\GITHUB\Spelet-Python\build\bearlibterminal\Terminal\Source\SaveBMP.cpp" />
+    <ClCompile Include="C:\Users\maxim\OneDrive\Skrivbord\GITHUB\Spelet-Python\build\bearlibterminal\Terminal\Source\Stage.cpp" />
+    <ClCompile Include="C:\Users\maxim\OneDrive\Skrivbord\GITHUB\Spelet-Python\build\bearlibterminal\Terminal\Source\Terminal.cpp" />
+    <ClCompile Include="C:\Users\maxim\OneDrive\Skrivbord\GITHUB\Spelet-Python\build\bearlibterminal\Terminal\Source\Texture.cpp" />
+    <ClCompile Include="C:\Users\maxim\OneDrive\Skrivbord\GITHUB\Spelet-Python\build\bearlibterminal\Terminal\Source\Tileset.cpp" />
+    <ClCompile Include="C:\Users\maxim\OneDrive\Skrivbord\GITHUB\Spelet-Python\build\bearlibterminal\Terminal\Source\TrueTypeTileset.cpp" />
+    <ClCompile Include="C:\Users\maxim\OneDrive\Skrivbord\GITHUB\Spelet-Python\build\bearlibterminal\Terminal\Source\Utility.cpp" />
+    <ClCompile Include="C:\Users\maxim\OneDrive\Skrivbord\GITHUB\Spelet-Python\build\bearlibterminal\Terminal\Source\WinApiWindow.cpp" />
+    <ClCompile Include="C:\Users\maxim\OneDrive\Skrivbord\GITHUB\Spelet-Python\build\bearlibterminal\Terminal\Source\Window.cpp" />
+    <ClCompile Include="C:\Users\maxim\OneDrive\Skrivbord\GITHUB\Spelet-Python\build\bearlibterminal\Terminal\Source\X11Window.cpp" />
+    <ClInclude Include="C:\Users\maxim\OneDrive\Skrivbord\GITHUB\Spelet-Python\build\bearlibterminal\Terminal\Source\Atlas.hpp" />
+    <ClInclude Include="C:\Users\maxim\OneDrive\Skrivbord\GITHUB\Spelet-Python\build\bearlibterminal\Terminal\Source\BOM.hpp" />
+    <ClInclude Include="C:\Users\maxim\OneDrive\Skrivbord\GITHUB\Spelet-Python\build\bearlibterminal\Terminal\Source\Base64.hpp" />
+    <ClInclude Include="C:\Users\maxim\OneDrive\Skrivbord\GITHUB\Spelet-Python\build\bearlibterminal\Terminal\Source\Bitmap.hpp" />
+    <ClInclude Include="C:\Users\maxim\OneDrive\Skrivbord\GITHUB\Spelet-Python\build\bearlibterminal\Terminal\Source\BitmapTileset.hpp" />
+    <ClInclude Include="C:\Users\maxim\OneDrive\Skrivbord\GITHUB\Spelet-Python\build\bearlibterminal\Terminal\Source\Builtin.Codepages.hpp" />
+    <ClInclude Include="C:\Users\maxim\OneDrive\Skrivbord\GITHUB\Spelet-Python\build\bearlibterminal\Terminal\Source\Builtin.DefaultFont.hpp" />
+    <ClInclude Include="C:\Users\maxim\OneDrive\Skrivbord\GITHUB\Spelet-Python\build\bearlibterminal\Terminal\Source\CocoaWindow.h" />
+    <ClInclude Include="C:\Users\maxim\OneDrive\Skrivbord\GITHUB\Spelet-Python\build\bearlibterminal\Terminal\Source\Color.hpp" />
+    <ClInclude Include="C:\Users\maxim\OneDrive\Skrivbord\GITHUB\Spelet-Python\build\bearlibterminal\Terminal\Source\Config.hpp" />
+    <ClInclude Include="C:\Users\maxim\OneDrive\Skrivbord\GITHUB\Spelet-Python\build\bearlibterminal\Terminal\Source\DynamicTileset.hpp" />
+    <ClInclude Include="C:\Users\maxim\OneDrive\Skrivbord\GITHUB\Spelet-Python\build\bearlibterminal\Terminal\Source\Encoding.hpp" />
+    <ClInclude Include="C:\Users\maxim\OneDrive\Skrivbord\GITHUB\Spelet-Python\build\bearlibterminal\Terminal\Source\Geometry.hpp" />
+    <ClInclude Include="C:\Users\maxim\OneDrive\Skrivbord\GITHUB\Spelet-Python\build\bearlibterminal\Terminal\Source\Keystroke.hpp" />
+    <ClInclude Include="C:\Users\maxim\OneDrive\Skrivbord\GITHUB\Spelet-Python\build\bearlibterminal\Terminal\Source\LoadBitmap.hpp" />
+    <ClInclude Include="C:\Users\maxim\OneDrive\Skrivbord\GITHUB\Spelet-Python\build\bearlibterminal\Terminal\Source\Log.hpp" />
+    <ClInclude Include="C:\Users\maxim\OneDrive\Skrivbord\GITHUB\Spelet-Python\build\bearlibterminal\Terminal\Source\OpenGL.hpp" />
+    <ClInclude Include="C:\Users\maxim\OneDrive\Skrivbord\GITHUB\Spelet-Python\build\bearlibterminal\Terminal\Source\OptionGroup.hpp" />
+    <ClInclude Include="C:\Users\maxim\OneDrive\Skrivbord\GITHUB\Spelet-Python\build\bearlibterminal\Terminal\Source\Options.hpp" />
+    <ClInclude Include="C:\Users\maxim\OneDrive\Skrivbord\GITHUB\Spelet-Python\build\bearlibterminal\Terminal\Source\Palette.hpp" />
+    <ClInclude Include="C:\Users\maxim\OneDrive\Skrivbord\GITHUB\Spelet-Python\build\bearlibterminal\Terminal\Source\Platform.hpp" />
+    <ClInclude Include="C:\Users\maxim\OneDrive\Skrivbord\GITHUB\Spelet-Python\build\bearlibterminal\Terminal\Source\Point.hpp" />
+    <ClInclude Include="C:\Users\maxim\OneDrive\Skrivbord\GITHUB\Spelet-Python\build\bearlibterminal\Terminal\Source\Rectangle.hpp" />
+    <ClInclude Include="C:\Users\maxim\OneDrive\Skrivbord\GITHUB\Spelet-Python\build\bearlibterminal\Terminal\Source\Resource.hpp" />
+    <ClInclude Include="C:\Users\maxim\OneDrive\Skrivbord\GITHUB\Spelet-Python\build\bearlibterminal\Terminal\Source\Size.hpp" />
+    <ClInclude Include="C:\Users\maxim\OneDrive\Skrivbord\GITHUB\Spelet-Python\build\bearlibterminal\Terminal\Source\Stage.hpp" />
+    <ClInclude Include="C:\Users\maxim\OneDrive\Skrivbord\GITHUB\Spelet-Python\build\bearlibterminal\Terminal\Source\Terminal.hpp" />
+    <ClInclude Include="C:\Users\maxim\OneDrive\Skrivbord\GITHUB\Spelet-Python\build\bearlibterminal\Terminal\Source\Texture.hpp" />
+    <ClInclude Include="C:\Users\maxim\OneDrive\Skrivbord\GITHUB\Spelet-Python\build\bearlibterminal\Terminal\Source\Tileset.hpp" />
+    <ClInclude Include="C:\Users\maxim\OneDrive\Skrivbord\GITHUB\Spelet-Python\build\bearlibterminal\Terminal\Source\TrueTypeTileset.hpp" />
+    <ClInclude Include="C:\Users\maxim\OneDrive\Skrivbord\GITHUB\Spelet-Python\build\bearlibterminal\Terminal\Source\Utility.hpp" />
+    <ClInclude Include="C:\Users\maxim\OneDrive\Skrivbord\GITHUB\Spelet-Python\build\bearlibterminal\Terminal\Source\WinApiWindow.hpp" />
+    <ClInclude Include="C:\Users\maxim\OneDrive\Skrivbord\GITHUB\Spelet-Python\build\bearlibterminal\Terminal\Source\Window.hpp" />
+    <ClInclude Include="C:\Users\maxim\OneDrive\Skrivbord\GITHUB\Spelet-Python\build\bearlibterminal\Terminal\Source\X11Window.hpp" />
+    <ClInclude Include="C:\Users\maxim\OneDrive\Skrivbord\GITHUB\Spelet-Python\build\bearlibterminal\Terminal\Include\C\BearLibTerminal.h" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="C:\Users\maxim\OneDrive\Skrivbord\GITHUB\Spelet-Python\build-msvc\ZERO_CHECK.vcxproj">
+      <Project>{5BCC8174-321C-3921-AFB6-342A31F53F6D}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\maxim\OneDrive\Skrivbord\GITHUB\Spelet-Python\build-msvc\bearlibterminal_build\Dependencies\FreeType\freetype2.vcxproj">
+      <Project>{38B6A438-0035-3AC4-9498-4A5F9F42DED1}</Project>
+      <Name>freetype2</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\maxim\OneDrive\Skrivbord\GITHUB\Spelet-Python\build-msvc\bearlibterminal_build\Dependencies\PicoPNG\picopng.vcxproj">
+      <Project>{16DD4081-88A7-3B82-ABFB-D6564495EC85}</Project>
+      <Name>picopng</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

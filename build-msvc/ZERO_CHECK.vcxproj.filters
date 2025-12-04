@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\maxim\OneDrive\Skrivbord\GITHUB\Spelet-Python\build-msvc\CMakeFiles\6e9e0f0749777b21bb6b9aba5edc1a25\generate.stamp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{5ED411F5-743A-314C-A18E-5FABA40BDF1B}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

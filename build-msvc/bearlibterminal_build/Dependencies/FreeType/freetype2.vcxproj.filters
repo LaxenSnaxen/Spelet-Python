@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\Users\maxim\OneDrive\Skrivbord\GITHUB\Spelet-Python\build\bearlibterminal\Terminal\Dependencies\FreeType\Source\autofit\autofit.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\maxim\OneDrive\Skrivbord\GITHUB\Spelet-Python\build\bearlibterminal\Terminal\Dependencies\FreeType\Source\base\ftbase.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\maxim\OneDrive\Skrivbord\GITHUB\Spelet-Python\build\bearlibterminal\Terminal\Dependencies\FreeType\Source\base\ftbbox.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\maxim\OneDrive\Skrivbord\GITHUB\Spelet-Python\build\bearlibterminal\Terminal\Dependencies\FreeType\Source\base\ftdebug.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\maxim\OneDrive\Skrivbord\GITHUB\Spelet-Python\build\bearlibterminal\Terminal\Dependencies\FreeType\Source\base\ftfstype.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\maxim\OneDrive\Skrivbord\GITHUB\Spelet-Python\build\bearlibterminal\Terminal\Dependencies\FreeType\Source\base\ftgasp.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\maxim\OneDrive\Skrivbord\GITHUB\Spelet-Python\build\bearlibterminal\Terminal\Dependencies\FreeType\Source\base\ftglyph.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\maxim\OneDrive\Skrivbord\GITHUB\Spelet-Python\build\bearlibterminal\Terminal\Dependencies\FreeType\Source\base\ftinit.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\maxim\OneDrive\Skrivbord\GITHUB\Spelet-Python\build\bearlibterminal\Terminal\Dependencies\FreeType\Source\base\ftlcdfil.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\maxim\OneDrive\Skrivbord\GITHUB\Spelet-Python\build\bearlibterminal\Terminal\Dependencies\FreeType\Source\base\ftmm.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\maxim\OneDrive\Skrivbord\GITHUB\Spelet-Python\build\bearlibterminal\Terminal\Dependencies\FreeType\Source\base\ftsystem.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\maxim\OneDrive\Skrivbord\GITHUB\Spelet-Python\build\bearlibterminal\Terminal\Dependencies\FreeType\Source\raster\raster.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\maxim\OneDrive\Skrivbord\GITHUB\Spelet-Python\build\bearlibterminal\Terminal\Dependencies\FreeType\Source\sfnt\sfnt.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\maxim\OneDrive\Skrivbord\GITHUB\Spelet-Python\build\bearlibterminal\Terminal\Dependencies\FreeType\Source\smooth\smooth.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\maxim\OneDrive\Skrivbord\GITHUB\Spelet-Python\build\bearlibterminal\Terminal\Dependencies\FreeType\Source\truetype\truetype.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\maxim\OneDrive\Skrivbord\GITHUB\Spelet-Python\build\bearlibterminal\Terminal\Dependencies\FreeType\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{74423F27-42DB-3CDB-B15A-03F86D1B1631}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

@@ -28,6 +28,7 @@ git clone https://github.com/mackron/miniaudio.git
 Set-Location ..
 ```
 
+
 3) Generera byggfiler och bygg (Visual Studio rekommenderas)
 
 Visual Studio 2022, x64 (rekommenderat):
@@ -36,11 +37,6 @@ cmake -S . -B build-msvc -G "Visual Studio 17 2022" -A x64
 cmake --build build-msvc --config Release
 ```
 
-Alternativt MinGW:
-```powershell
-cmake -S . -B build -G "MinGW Makefiles"
-cmake --build build --config Release
-```
 
 4) Kör programmet
 - Leta efter exe i `build-msvc/bin` (Visual Studio) eller `build/bin` (MinGW).

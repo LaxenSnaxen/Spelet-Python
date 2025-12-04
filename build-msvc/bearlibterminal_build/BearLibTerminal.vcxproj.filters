@@ -1,0 +1,219 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\Users\maxim\OneDrive\Skrivbord\GITHUB\Spelet-Python\build\bearlibterminal\Terminal\Source\Atlas.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\maxim\OneDrive\Skrivbord\GITHUB\Spelet-Python\build\bearlibterminal\Terminal\Source\BOM.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\maxim\OneDrive\Skrivbord\GITHUB\Spelet-Python\build\bearlibterminal\Terminal\Source\Base64.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\maxim\OneDrive\Skrivbord\GITHUB\Spelet-Python\build\bearlibterminal\Terminal\Source\BearLibTerminal.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\maxim\OneDrive\Skrivbord\GITHUB\Spelet-Python\build\bearlibterminal\Terminal\Source\Bitmap.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\maxim\OneDrive\Skrivbord\GITHUB\Spelet-Python\build\bearlibterminal\Terminal\Source\BitmapTileset.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\maxim\OneDrive\Skrivbord\GITHUB\Spelet-Python\build\bearlibterminal\Terminal\Source\Config.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\maxim\OneDrive\Skrivbord\GITHUB\Spelet-Python\build\bearlibterminal\Terminal\Source\DynamicTileset.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\maxim\OneDrive\Skrivbord\GITHUB\Spelet-Python\build\bearlibterminal\Terminal\Source\Encoding.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\maxim\OneDrive\Skrivbord\GITHUB\Spelet-Python\build\bearlibterminal\Terminal\Source\Keystroke.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\maxim\OneDrive\Skrivbord\GITHUB\Spelet-Python\build\bearlibterminal\Terminal\Source\LoadBMP.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\maxim\OneDrive\Skrivbord\GITHUB\Spelet-Python\build\bearlibterminal\Terminal\Source\LoadBitmap.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\maxim\OneDrive\Skrivbord\GITHUB\Spelet-Python\build\bearlibterminal\Terminal\Source\LoadJPEG.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\maxim\OneDrive\Skrivbord\GITHUB\Spelet-Python\build\bearlibterminal\Terminal\Source\LoadPNG.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\maxim\OneDrive\Skrivbord\GITHUB\Spelet-Python\build\bearlibterminal\Terminal\Source\Log.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\maxim\OneDrive\Skrivbord\GITHUB\Spelet-Python\build\bearlibterminal\Terminal\Source\Luaopen.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\maxim\OneDrive\Skrivbord\GITHUB\Spelet-Python\build\bearlibterminal\Terminal\Source\OpenGL.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\maxim\OneDrive\Skrivbord\GITHUB\Spelet-Python\build\bearlibterminal\Terminal\Source\OptionGroup.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\maxim\OneDrive\Skrivbord\GITHUB\Spelet-Python\build\bearlibterminal\Terminal\Source\Options.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\maxim\OneDrive\Skrivbord\GITHUB\Spelet-Python\build\bearlibterminal\Terminal\Source\Palette.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\maxim\OneDrive\Skrivbord\GITHUB\Spelet-Python\build\bearlibterminal\Terminal\Source\Platform.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\maxim\OneDrive\Skrivbord\GITHUB\Spelet-Python\build\bearlibterminal\Terminal\Source\Resource.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\maxim\OneDrive\Skrivbord\GITHUB\Spelet-Python\build\bearlibterminal\Terminal\Source\SaveBMP.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\maxim\OneDrive\Skrivbord\GITHUB\Spelet-Python\build\bearlibterminal\Terminal\Source\Stage.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\maxim\OneDrive\Skrivbord\GITHUB\Spelet-Python\build\bearlibterminal\Terminal\Source\Terminal.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\maxim\OneDrive\Skrivbord\GITHUB\Spelet-Python\build\bearlibterminal\Terminal\Source\Texture.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\maxim\OneDrive\Skrivbord\GITHUB\Spelet-Python\build\bearlibterminal\Terminal\Source\Tileset.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\maxim\OneDrive\Skrivbord\GITHUB\Spelet-Python\build\bearlibterminal\Terminal\Source\TrueTypeTileset.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\maxim\OneDrive\Skrivbord\GITHUB\Spelet-Python\build\bearlibterminal\Terminal\Source\Utility.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\maxim\OneDrive\Skrivbord\GITHUB\Spelet-Python\build\bearlibterminal\Terminal\Source\WinApiWindow.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\maxim\OneDrive\Skrivbord\GITHUB\Spelet-Python\build\bearlibterminal\Terminal\Source\Window.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\maxim\OneDrive\Skrivbord\GITHUB\Spelet-Python\build\bearlibterminal\Terminal\Source\X11Window.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="C:\Users\maxim\OneDrive\Skrivbord\GITHUB\Spelet-Python\build\bearlibterminal\Terminal\Source\Atlas.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\maxim\OneDrive\Skrivbord\GITHUB\Spelet-Python\build\bearlibterminal\Terminal\Source\BOM.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\maxim\OneDrive\Skrivbord\GITHUB\Spelet-Python\build\bearlibterminal\Terminal\Source\Base64.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\maxim\OneDrive\Skrivbord\GITHUB\Spelet-Python\build\bearlibterminal\Terminal\Source\Bitmap.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\maxim\OneDrive\Skrivbord\GITHUB\Spelet-Python\build\bearlibterminal\Terminal\Source\BitmapTileset.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\maxim\OneDrive\Skrivbord\GITHUB\Spelet-Python\build\bearlibterminal\Terminal\Source\Builtin.Codepages.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\maxim\OneDrive\Skrivbord\GITHUB\Spelet-Python\build\bearlibterminal\Terminal\Source\Builtin.DefaultFont.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\maxim\OneDrive\Skrivbord\GITHUB\Spelet-Python\build\bearlibterminal\Terminal\Source\CocoaWindow.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\maxim\OneDrive\Skrivbord\GITHUB\Spelet-Python\build\bearlibterminal\Terminal\Source\Color.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\maxim\OneDrive\Skrivbord\GITHUB\Spelet-Python\build\bearlibterminal\Terminal\Source\Config.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\maxim\OneDrive\Skrivbord\GITHUB\Spelet-Python\build\bearlibterminal\Terminal\Source\DynamicTileset.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\maxim\OneDrive\Skrivbord\GITHUB\Spelet-Python\build\bearlibterminal\Terminal\Source\Encoding.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\maxim\OneDrive\Skrivbord\GITHUB\Spelet-Python\build\bearlibterminal\Terminal\Source\Geometry.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\maxim\OneDrive\Skrivbord\GITHUB\Spelet-Python\build\bearlibterminal\Terminal\Source\Keystroke.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\maxim\OneDrive\Skrivbord\GITHUB\Spelet-Python\build\bearlibterminal\Terminal\Source\LoadBitmap.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\maxim\OneDrive\Skrivbord\GITHUB\Spelet-Python\build\bearlibterminal\Terminal\Source\Log.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\maxim\OneDrive\Skrivbord\GITHUB\Spelet-Python\build\bearlibterminal\Terminal\Source\OpenGL.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\maxim\OneDrive\Skrivbord\GITHUB\Spelet-Python\build\bearlibterminal\Terminal\Source\OptionGroup.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\maxim\OneDrive\Skrivbord\GITHUB\Spelet-Python\build\bearlibterminal\Terminal\Source\Options.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\maxim\OneDrive\Skrivbord\GITHUB\Spelet-Python\build\bearlibterminal\Terminal\Source\Palette.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\maxim\OneDrive\Skrivbord\GITHUB\Spelet-Python\build\bearlibterminal\Terminal\Source\Platform.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\maxim\OneDrive\Skrivbord\GITHUB\Spelet-Python\build\bearlibterminal\Terminal\Source\Point.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\maxim\OneDrive\Skrivbord\GITHUB\Spelet-Python\build\bearlibterminal\Terminal\Source\Rectangle.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\maxim\OneDrive\Skrivbord\GITHUB\Spelet-Python\build\bearlibterminal\Terminal\Source\Resource.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\maxim\OneDrive\Skrivbord\GITHUB\Spelet-Python\build\bearlibterminal\Terminal\Source\Size.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\maxim\OneDrive\Skrivbord\GITHUB\Spelet-Python\build\bearlibterminal\Terminal\Source\Stage.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\maxim\OneDrive\Skrivbord\GITHUB\Spelet-Python\build\bearlibterminal\Terminal\Source\Terminal.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\maxim\OneDrive\Skrivbord\GITHUB\Spelet-Python\build\bearlibterminal\Terminal\Source\Texture.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\maxim\OneDrive\Skrivbord\GITHUB\Spelet-Python\build\bearlibterminal\Terminal\Source\Tileset.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\maxim\OneDrive\Skrivbord\GITHUB\Spelet-Python\build\bearlibterminal\Terminal\Source\TrueTypeTileset.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\maxim\OneDrive\Skrivbord\GITHUB\Spelet-Python\build\bearlibterminal\Terminal\Source\Utility.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\maxim\OneDrive\Skrivbord\GITHUB\Spelet-Python\build\bearlibterminal\Terminal\Source\WinApiWindow.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\maxim\OneDrive\Skrivbord\GITHUB\Spelet-Python\build\bearlibterminal\Terminal\Source\Window.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\maxim\OneDrive\Skrivbord\GITHUB\Spelet-Python\build\bearlibterminal\Terminal\Source\X11Window.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\maxim\OneDrive\Skrivbord\GITHUB\Spelet-Python\build\bearlibterminal\Terminal\Include\C\BearLibTerminal.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\maxim\OneDrive\Skrivbord\GITHUB\Spelet-Python\build\bearlibterminal\Terminal\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{A90E9839-87EB-3475-BA67-D3CBC9EB823C}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{74423F27-42DB-3CDB-B15A-03F86D1B1631}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

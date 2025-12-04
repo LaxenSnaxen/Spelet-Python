@@ -1,0 +1,10 @@
+^C:\USERS\MAXIM\ONEDRIVE\SKRIVBORD\GITHUB\SPELET-PYTHON\BUILD-MSVC\CMAKEFILES\6E9E0F0749777B21BB6B9ABA5EDC1A25\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/maxim/OneDrive/Skrivbord/GITHUB/Spelet-Python -BC:/Users/maxim/OneDrive/Skrivbord/GITHUB/Spelet-Python/build-msvc --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file C:/Users/maxim/OneDrive/Skrivbord/GITHUB/Spelet-Python/build-msvc/Spelet.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
