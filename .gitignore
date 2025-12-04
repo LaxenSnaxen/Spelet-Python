@@ -34,3 +34,14 @@ Makefile
 # OS files
 .DS_Store
 Thumbs.db
+
+# Build files
+*.vcxproj
+*.vcxproj.filters
+*.sln
+*.tlog
+*.recipe
+*.dll
+*.exp
+*.lib
+*.lastbuildstate
