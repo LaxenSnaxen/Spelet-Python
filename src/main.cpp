@@ -2,10 +2,11 @@
 #include <string>
 #include <chrono>
 #include <thread>
+#include "soundManager.cpp"
 
 // Game constants
-const int WINDOW_WIDTH = 80;
-const int WINDOW_HEIGHT = 25;
+const int WINDOW_WIDTH = 64;
+const int WINDOW_HEIGHT = 32;
 const int PLAYER_START_X = WINDOW_WIDTH / 2;
 const int PLAYER_START_Y = WINDOW_HEIGHT / 2;
 
@@ -82,6 +83,13 @@ void handleInput(GameState& state) {
                 break;
             case TK_SPACE:
                 // Space: no audio action configured
+                soundManager::get().play("sounds/TBHYippee.mp3");
+                std::cout <<"Space Space Space"<< std::endl;
+                break;
+            case TK_TAB:
+                // TODO: Open inventory
+                // Och hur gör vi det egentligen. Fört måste det ritas på någotvis? Det bör ta upp hela skärmen, eller endast en låda på skärmen.
+                
                 break;
             default:
                 break;
@@ -133,10 +141,10 @@ void render(const GameState& state) {
     
     // Draw instructions
     terminal_color(color_from_name("white"));
-    terminal_print(2, WINDOW_HEIGHT - 1, " WASD/Arrows: Move | Space: Action | ESC: Quit ");
+    terminal_print(2, WINDOW_HEIGHT - 1, " WASD/Arrows: Move | Space: Action | Tab: Inventory | ESC: Quit ");
     
     // Draw title
-    terminal_print(2, 0, " Spelet C++ ");
+    terminal_print(2, 0, " Spelet Python");
     
     terminal_refresh();
 }
@@ -149,6 +157,8 @@ int main() {
     if (!initTerminal()) {
         return 1;
     }
+    // Init soundManager
+    soundManager::get().init();
     // Show a simple splash and block until the user presses a key so the
     // BearLibTerminal window stays open for inspection.
     terminal_clear();
@@ -171,6 +181,9 @@ int main() {
     auto lastTime = std::chrono::high_resolution_clock::now();
     const float targetFPS = 60.0f;
     const float targetFrameTime = 1.0f / targetFPS;
+
+    // Sound manager test
+
     
     // Main game loop
     while (state.running) {
