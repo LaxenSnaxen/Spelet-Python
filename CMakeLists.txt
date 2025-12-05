@@ -2,7 +2,7 @@ cmake_minimum_required(VERSION 3.10)
 
 project(Spelet LANGUAGES CXX)
 
-set(CMAKE_CXX_STANDARD 14)
+set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 # Put all output artifacts into known locations to avoid Makefile/dependency
@@ -26,6 +26,13 @@ set(APP_SOURCES
 )
 add_executable(Spelet ${APP_SOURCES})
 target_include_directories(Spelet PRIVATE ${CMAKE_SOURCE_DIR}/build/bearlibterminal/Terminal/Include/C ${CMAKE_SOURCE_DIR}/src)
+
+# Copy sound assets to executable directory
+add_custom_command(TARGET Spelet POST_BUILD
+    COMMAND ${CMAKE_COMMAND} -E copy_directory
+        ${CMAKE_SOURCE_DIR}/src/sounds
+        $<TARGET_FILE_DIR:Spelet>/sounds
+)
 
 # Link against BearLibTerminal and miniaudio
 target_link_libraries(Spelet PRIVATE BearLibTerminal miniaudio)
